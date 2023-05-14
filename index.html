@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techtopia</title>
+    <link rel="icon" href="./images/icons8-technology-40.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid "> <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="offcanvas offcanvas-end bg-black d-flex w-50 flex-row flex-nowrap align-items-center justify-content-around" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div><img src="./images/icons8-technology-40.png" class="mb-2 me-2"><a class="navbar-brand logo" href="#"> Techtopia</a></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3"> <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a> </li>
+                        <li class="nav-item mx-3"> <a class="nav-link text-white" href="about.html">About</a> </li>
+                        <li class="nav-item mx-3"> <a class="nav-link text-white" href="contact.html">Contact</a> </li>
+                        <li class="nav-item mx-5"> <i class="fa-solid fa-cart-shopping text-white"></i> <span class="counter text-white ms-2">0</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- HOME -->
+    <section id="Home" class="home bg-image d-flex justify-content-center align-items-center" style="background-image: url(images/093062fdbe854a8dab2d7f9b9ed15307.webp)">
+        <div class="overlay-home"></div>
+        <div class="home-content">
+            <div class="container">
+                <div class="row mt-4">
+                    <h1 class="home-title mb-2">Welcome to <span class="text-primary">Techtopia</span></h1>
+                    <h3>Surf the Latest Wave of Technology!</h3>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mt-4 ">
+                    <div class="col-md-1"> <a class="previous mt-5 text-light p-3 rounded-1" onclick="previousSlide()"><i class="fas fa-arrow-left"></i></a> </div>
+                    <div class="slider justify-content-center mt-4 w-50">
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-326502.png"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-2015876.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-5309567.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-3183132.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-4992644.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/pexels-photo-196656.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/h1.jpg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/h2.jpg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/h3.jpg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/h4.jpeg"> </div>
+                        <div class="item col-md-12 mb-5"> <img class="img-fluid rounded" src="./images/h5.jpeg"> </div>
+                    </div>
+                    <div class="col-md-1"> <a class="next mt-5 text-light p-3 rounded-1" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- CATEGORIES -->
+    <section id="Categories" class="py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center mb-2">
+                        <h3 class="title-a">Categories</h3>
+                        <p class="subtitle-a fw-bolder">Please, Choose a Category!</p>
+                        <p class="subtitle-a">Click <i class="fa-solid fa-circle-plus text-primary"></i> button and add to cart!</p>
+                        <div class="line-mf mb-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <ul class="navs d-flex">
+                    <li class="nav-item2 active" data-category="all">All</li>
+                    <li class="nav-item2" data-category="tvs">TVs</li>
+                    <li class="nav-item2" data-category="laptops">Laptops</li>
+                    <li class="nav-item2" data-category="mobiles">Mobiles</li>
+                    <li class="nav-item2" data-category="cameras">Cameras</li>
+                    <li class="nav-item2" data-category="smart-watches">Smart Watches</li>
+                </ul>
+                <div class="tab-content mt-3">
+                    <div class="tab-pane active" data-category="all">
+                        <!-- Products of all categories -->
+                        <div class="row text-start">
+                            <!-- TV1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c1.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Samsung 50 Inch 4K Crystal UHD Smart LED TV with High Dynamic Range, Built-In Receiver</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 11,499</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- TV2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c2.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">LG LED Smart TV 43 inch LM6370 Series Full HD HDR Smart LED TV - 43LM6370PVA</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 8,599</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- TV3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c3.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">TORNADO Smart LED TV 43 Inch Full HD, 60 Hz, 3 Years Full Free Warranty - 43ES1500E</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 8,299</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- TV4 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c4.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">JAC 43 Inch LED Smart TV Black, Resolution: 1920x1080 - NGLD-43JB621</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 6,199</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.5 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/l1.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">16-inch MacBook Pro: Apple M1 Pro chip with 10‑core CPU and 16‑core GPU, 16GB, 512GB SSD - Silver</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 90,537</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/l2.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">HP Pavilion Gaming Laptop 15-dk2087ne - 11th Intel Core i5-11300H, 8GB RAM, 1TB HDD + 256GB SSD, Dos - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 22,545</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/l3.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Dell Inspiron 15 3000 FHD 1080p, AMD Ryzen 5, 8GB Memory, 256GB SSD, Vega 8 Graphics - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 22,111</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap4 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/l4.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">ASUS ROG Zephyrus G14, Intel Core i7, 16 GB RAM, CPU Speed 4.7 GHz, GA401QM-K2012TS - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 41,381</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/m1.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Apple iPhone 14 (128 GB) - 5G - Light Blue</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 33,400</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile 3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/m2.jpg" alt="work-6" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Samsung Galaxy S23+ (256GB) - Cream</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 34,999</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile5 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/m3.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Realme 10 Pro+ 5G (256 GB) - Dark Matter</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,250</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile7 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/m4.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">POCO X5 Pro 5G (256 GB), 8 GB RAM Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 14,950</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- cam2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/cam2.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Sony Alpha ZV-E10L Interchangeable Lens Vlog, Large APS-C - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 32,980</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- SW2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/sw2.jpg" alt="work-10" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">HUAWEI Watch GT 2 (46 mm) Smart Watch, 45mm, Pebble Brown</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 7,444</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- SW3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/sw3.jpg" alt="work-10" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">REALME TechLife Watch R100, Standard, Modern, Grey</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 2,270</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.4 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-category="tvs">
+                        <!-- Products of TVs category -->
+                        <div class="row text-start">
+                            <!-- TV1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c1.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Samsung 50 Inch 4K Crystal UHD Smart LED TV with High Dynamic Range, Built-In Receiver</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 11,499</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- TV2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c2.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">LG LED Smart TV 43 inch LM6370 Series Full HD HDR Smart LED TV - 43LM6370PVA</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 8,599</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- TV3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c3.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">TORNADO Smart LED TV 43 Inch Full HD, 60 Hz, 3 Years Full Free Warranty - 43ES1500E</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 8,299</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- TV4 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c4.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">JAC 43 Inch LED Smart TV Black, Resolution: 1920x1080 - NGLD-43JB621</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 6,199</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-4">4.5 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- TV5  -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/p1.jpg" alt="work-1" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Toshiba 4K Smart Frameless D-LED Ultra HD 65 Inch TV with Built-In Receiver, Black - 65U5965EA</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,788</span> <s class="ms-5">EGP 20,999</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- TV6 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work"><div class="work-img"> <img src="images/c5.jpg" class="img-fluid"> </div></a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">LG UHD 4K TV 65 Inch UQ9100 Series, Cinema Screen Design 4K Active AI ThinQ - 65UQ91006LC</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,999</span> <s class="ms-5">EGP 18,999</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-category="laptops">
+                        <!-- Products of laptops category -->
+                        <div class="row text-start">
+                            <!-- Lap1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/l1.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">16-inch MacBook Pro: Apple M1 Pro chip with 10‑core CPU and 16‑core GPU, 16GB, 512GB SSD - Silver</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 90,537</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/l2.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">HP Pavilion Gaming Laptop 15-dk2087ne - 11th Intel Core i5-11300H, 8GB RAM, 1TB HDD + 256GB SSD, Dos - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 22,545</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/l3.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Dell Inspiron 15 3000 FHD 1080p, AMD Ryzen 5, 8GB Memory, 256GB SSD, Vega 8 Graphics - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 22,111</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap4 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/l4.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">ASUS ROG Zephyrus G14, Intel Core i7, 16 GB RAM, CPU Speed 4.7 GHz, GA401QM-K2012TS - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 41,381</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap5  -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p2.jpg" alt="work-1" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">Lenovo IdeaPad 3 15ITL6 Laptop - Ci5-1135G7-8GB - MX350 2GB - 1TB HDD - 15.6 FHD - Free DOS - Blue</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,999</span> <s class="ms-5">EGP 19,649</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Lap6 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/l5.jpg" alt="work-1" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8">
+                                                <h2 class="work-title">PlanQ DG1 PRO 15.6 FHD Intel I5-10210U -16GB RAM - 1TB SSD - 8GB Xe Max Graphics Card - Silver</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,990</span> <s class="ms-5">EGP 18,099</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-5">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-category="mobiles">
+                        <!-- Products of mobiles category -->
+                        <div class="row text-start">
+                            <!-- mobile1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p5.jpg" alt="work-5" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Apple iPhone 14 Pro Max (128 GB) - Space Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 49,111</span> <s class="ms-5">EGP 52,949</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">5.0 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/m1.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Apple iPhone 14 (128 GB) - 5G - Light Blue</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 33,400</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile 3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/m2.jpg" alt="work-6" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Samsung Galaxy S23+ (256GB) - Cream</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 34,999</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile4 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p6.jpg" alt="work-6" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Samsung Galaxy A73 (128GB) - Awesome Mint</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 15,550</span> <s class="ms-5">EGP 19,370</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile5 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/m3.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Realme 10 Pro+ 5G (256 GB) - Dark Matter</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 16,250</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile6 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p8.jpg" alt="work-8" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Realme 9i 4G LTE (128 GB) - Prism Blue</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 6,677</span> <s class="ms-5">EGP 7,449</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile7 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/m4.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">POCO X5 Pro 5G (256 GB), 8 GB RAM Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 14,950</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- mobile8 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p7.jpg" alt="work-7" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Oppo A16K Dual SIM (32 GB) - Lite Blue</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 3,899</span> <s class="ms-5">EGP 4,355</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate">4.5 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-category="cameras">
+                        <!-- Products of cameras category -->
+                        <div class="row text-start">
+                            <!-- cam1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p9.jpg" alt="work-9" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Canon 3616C016 90D Digital SLR Camera with 18-135 IS USM Lens - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 49,400</span> <s class="ms-5">EGP 53,949</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- cam2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/cam2.jpg" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">Sony Alpha ZV-E10L Interchangeable Lens Vlog, Large APS-C - Black</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 32,980</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" data-category="smart-watches">
+                        <!-- Products of smart watches category -->
+                        <div class="row text-start">
+                            <!-- SW1 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/p10.jpg" alt="work-10" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">SAMSUNG Galaxy Watch5 Pro Smart Watch, 45mm, Black Titanium</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 12,300</span> <s class="ms-5">EGP 12,755</s></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- SW2 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/sw2.jpg" alt="work-10" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">HUAWEI Watch GT 2 (46 mm) Smart Watch, 45mm, Pebble Brown</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 7,444</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- SW3 -->
+                            <div class="col-md-3">
+                                <div class="work-box"> <a href="#Work">
+                                        <div class="work-img"> <img src="images/sw3.jpg" alt="work-10" class="img-fluid"> </div>
+                                    </a>
+                                    <div class="work-content">
+                                        <div class="row text-black">
+                                            <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                                <h2 class="work-title">REALME TechLife Watch R100, Standard, Modern, Grey</h2>
+                                                <div class="work-more d-flex justify-content-between">
+                                                    <div class="work-category fw-bold"><span>EGP 2,270</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="work-like d-flex flex-column justify-content-center me-2">
+                                                    <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                                    <div class="work-rate mt-3">4.4 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                                    <div class="clear-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> 
+
+    <!-- OFFERS-->
+    <section id="Offers" class="work-page bg-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center mb-5">
+                        <h3 class="title-a">Our Offers</h3>
+                        <p class="subtitle-a fw-bolder">Take advantage of our exciting offers we currently have available</p>
+                        <p class="subtitle-a">Click <i class="fa-solid fa-circle-plus text-primary"></i> button and add to cart!</p>
+                        <div class="line-mf mb-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p1.jpg" alt="work-1" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="work-title">Toshiba 4K Smart Frameless D-LED Ultra HD 65 Inch TV with Built-In Receiver, Black - 65U5965EA</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 16,788</span> <s class="ms-5">EGP 20,999</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="my-3"><a class="counterBtn"><i class="fa-solid fa-circle-plus"></i></a></div>
+                                        <div class="work-rate mt-5">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 2 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p2.jpg" alt="work-2" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="work-title">Lenovo IdeaPad 3 15ITL6 Laptop - Ci5-1135G7-8GB - MX350 2GB - 1TB HDD - 15.6 FHD - Free DOS - Blue</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 16,999</span> <s class="ms-5">EGP 19,649</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-5">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 3 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p3.jpg" alt="work-3" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="work-title">Dell Optiplex 7040 MT Desktop (Core i7-7700,8GB RAM, 1TB, Windows 10, 18.5in Monitor) - Black</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 7,520</span> <s class="ms-5">EGP 8,999</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-5">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 4 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p4.jpg" alt="work-4" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="work-title">HP 137fnw Personal Laser Multifunction Printer, Processor speed: 600 MHz, Memory: 128 MB - Grey</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 9,160</span> <s class="ms-5">EGP 9,850</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="my-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-5">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 5 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p5.jpg" alt="work-5" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Apple iPhone 14 Pro Max (128 GB) - Space Black</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 49,111</span> <s class="ms-5">EGP 52,949</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate">5.0 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 6 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p6.jpg" alt="work-6" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Samsung Galaxy A73 (128GB) - Awesome Mint</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 15,550</span> <s class="ms-5">EGP 19,370</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 7 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p8.jpg" alt="work-8" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Realme 9i 4G LTE (128 GB) - Prism Blue</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 6,677</span> <s class="ms-5">EGP 7,449</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate">4.6 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 8 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p7.jpg" alt="work-7" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Oppo A16K Dual SIM (32 GB) - Lite Blue</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 3,899</span> <s class="ms-5">EGP 4,355</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-3"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate">4.5 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 9 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p9.jpg" alt="work-9" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Canon 3616C016 90D Digital SLR Camera with 18-135 IS USM Lens - Black</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 49,400</span> <s class="ms-5">EGP 53,949</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-3">4.9 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 10 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p10.jpg" alt="work-10" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">SAMSUNG Galaxy Watch5 Pro Smart Watch, 45mm, Black Titanium</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 12,300</span> <s class="ms-5">EGP 12,755</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-3">4.7 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 11-->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p11.jpg" alt="work-11" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">VR SHINECON Headset 3D Glasses Headset Helmets VR Goggles 4.7-7 inch</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 570</span> <s class="ms-5">EGP 799</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-3">4.8 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 12 -->
+                <div class="col-md-3">
+                    <div class="work-box"> <a href="#Work">
+                            <div class="work-img"> <img src="images/p12.jpg" alt="work-12" class="img-fluid"> </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex flex-column justify-content-center">
+                                    <h2 class="work-title">Energizer 20000 Mah Ultimate Fast Charging Power Bank - Black</h2>
+                                    <div class="work-more d-flex justify-content-between">
+                                        <div class="work-category fw-bold"><span>EGP 1,099</span> <s class="ms-5">EGP 1,492</s></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="work-like d-flex flex-column justify-content-center me-2">
+                                        <div class="mb-4"><a class="counterBtn"> <i class="fa-solid fa-circle-plus"></i> </a></div>
+                                        <div class="work-rate mt-3">4.4 <i class="fa-solid fa-star text-warning mt-2"></i></div>
+                                        <div class="clear-fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- REVIEWS -->
+    <section class="section-testimonials bg-image" style="background-image:url(images/review.jpg) ;">
+        <div class="overlay-blue"></div>
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center mb-5">
+                            <h3 class="title-a text-white">Our customers' reviews</h3>
+                            <p class="subtitle-a text-white">Customers have praised our products and services, citing its high quality, excellent value and exceptional customer support</p>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev1.webp" class="d-block rounded-circle"> <span class="author">Lina Hamed</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead">"I recently purchased a laptop from Techtopia and I couldn't be happier with my purchase. The staff was incredibly helpful and knowledgeable, and they helped me find the perfect laptop to fit my needs. The laptop itself is fast, reliable, and has all the features I was looking for. I highly recommend Techtopia to anyone in the market for new technology products."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev2.webp" class="d-block rounded-circle" alt="Marta Socrate"> <span class="author">Hala Abdullah</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead">"I've been a loyal customer of Techtopia for years and I keep coming back because of their excellent products and customer service. They always have the latest and greatest technology products, and their staff goes above and beyond to make sure their customers are satisfied. I recently purchased a new phone from them and it's been a game-changer. Thanks for always providing top-notch service!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev3.webp" class="d-block rounded-circle" alt="Marta Socrate"> <span class="author">Noor Hashim</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead">"I had a great experience at Techtopia. The staff was courteous and helpful, and they were able to answer all of my questions about the products I was interested in. I ended up purchasing a new tablet and it has exceeded my expectations. Techtopia also offers great prices and deals, making it an excellent value for anyone looking to purchase new technology products."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev4.webp" class="d-block rounded-circle" alt="Marta Socrate"> <span class="author">Ahmed Ali</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead"> "I recently had a problem with a product I purchased from Techtopia and I was blown away by their customer service. They were quick to address my issue and went above and beyond to make sure I was satisfied with the resolution. Their commitment to customer satisfaction is unmatched and I will definitely be coming back for all my future technology needs."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev5.webp" class="d-block rounded-circle" alt="Marta Socrate"> <span class="author">Salma Faris</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead">"The staff at Techtopia is incredibly knowledgeable and friendly. They helped me find the perfect computer for my needs and even offered some helpful tips and tricks for using it. The computer itself is fantastic and has made my work so much easier. I would definitely recommend Techtopia to anyone looking for high-quality technology products and expert customer service."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="testimonial-box pb-4">
+                                <div class="author-test"> <img src="images/rev6.webp" class="d-block rounded-circle" alt="Marta Socrate"> <span class="author">Mariam Mohamed</span> </div>
+                                <div class="content-test pb-4">
+                                    <p class="lead">"I'm so glad I found Techtopia. They have an amazing selection of products and their prices are unbeatable. I recently purchased a new gaming console and it has been a game-changer. The staff was also incredibly helpful in helping me set it up and answering all of my questions. I will definitely be coming back for all my future technology needs."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators position-static"> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class=""></button> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class=""></button> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" class=""></button> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" class=""></button> <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6" class=""></button> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WARRANTY -->
+    <section id="Work" class="work-page bg-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center mb-5">
+                        <h3 class="title-a">Warranty and Returns Policy</h3>
+                        <p class="subtitle-a">Your satisfaction is our top priority <br>learn more about our warranty and returns policy below </p>
+                        <div class="line-mf mb-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row  mb-3">
+                <div class="col-md-6">
+                    <div class="row justify-content-center ">
+                        <div class="col-md-12">
+                            <h2>Warranty</h2>
+                            <p>All products sold on our website come with a manufacturer's warranty, which covers defects in materials and workmanship. The length of the warranty varies by product and is specified on the product page. If you need to make a warranty claim, please contact our customer service team.</p>
+                        </div>
+                        <div class="col-md-12 px-5 py-5 text-center"> <img src="./images/war.png" class="w-75" alt=""> </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pb-5">
+                        <h2>Returns</h2>
+                        <p>If you are not completely satisfied with your purchase, you may return it to us within 30 days of the delivery date for a full refund or exchange. To be eligible for a return, the product must be in its original packaging and in new, unused condition. Please contact our customer service team to initiate a return.</p>
+                    </div>
+                    <div class="pb-4">
+                        <h3>Exceptions</h3>
+                        <ul>
+                            <li>Software downloads.</li>
+                            <li>Gift cards.</li>
+                            <li>Opened consumable items (e.g. ink cartridges, batteries).</li>
+                        </ul>
+                    </div>
+                    <div class="pb-4">
+                        <h3>Shipping</h3>
+                        <p>If you are returning an item, you are responsible for the cost of shipping it back to us. We recommend using a trackable shipping service and purchasing shipping insurance. We are not responsible for any items lost or damaged during shipping.</p>
+                    </div>
+                    <div class="pb-4">
+                        <h3>Refunds</h3>
+                        <p>We will process your refund within 5 business days of receiving your returned item. Refunds will be credited to the original payment method. If you paid with a gift card, your refund will be issued as a new gift card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright"> ©Copyright <a href="#" class="techtopia-footer fw-bold">Techtopia</a>. All Rights Reserved </p>
+                        <div class="social-icons copyright">
+                            <ul>
+                                <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <a href="#Home" class="back-to-top d-flex align-items-center justify-content-center active"> <i class="fa-solid fa-angles-up"></i> </a>
+     
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
